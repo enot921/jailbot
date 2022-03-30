@@ -220,8 +220,8 @@ async def jail(ctx):
     sipbzb.get()
     sipbzbc.get()
     status = server_info.curr_map + ' | ' + server_info.players  
-    emb = discord.Embed(title='Jail', color=0x37393d ) 
-    emb1 = discord.Embed(title='Jail', color=0x37393d )
+    emb = discord.Embed(title='Jail', color=0x6600ff ) 
+    emb1 = discord.Embed(title='Jail', color=0x6600ff )
     if(len(config.get('custom_thumb')) > 0):
         emb.set_thumbnail(url=config.get('custom_thumb'))
     map_banner = config['map_banner'].get(server_info.curr_map, None)
@@ -276,7 +276,7 @@ async def ttt(ctx):
     kms.get()
     kl.get()
     status = server_info.curr_map + ' | ' + server_info.players  
-    emb = discord.Embed(title='TTTH', color=0x37393d) 
+    emb = discord.Embed(title='TTTH', color=0x6600ff) 
     if(len(config.get('custom_thumb')) > 0):
         emb.set_thumbnail(url=config.get('custom_thumb'))
     map_banner = config['map_banner'].get(server_info.curr_map, None)
@@ -320,9 +320,9 @@ async def public(ctx):
     m6.get()
     m7.get()
     status = server_info.curr_map + ' | ' + server_info.players  
-    emb = discord.Embed(title='DUST2', color=0x37393d) 
-    emb1 = discord.Embed(title='MIRAGE', color=0x37393d)
-    emb2 = discord.Embed(title='MIRAGE', color=0x37393d) 
+    emb = discord.Embed(title='DUST2', color=0x6600ff) 
+    emb1 = discord.Embed(title='MIRAGE', color=0x6600ff)
+    emb2 = discord.Embed(title='MIRAGE', color=0x6600ff) 
     if(len(config.get('custom_thumb')) > 0):
         emb.set_thumbnail(url=config.get('custom_thumb'))
     map_banner = config['map_banner'].get(server_info.curr_map, None)
@@ -404,8 +404,8 @@ async def awp(ctx):
     a6.get()
     a7.get()
     status = server_info.curr_map + ' | ' + server_info.players  
-    emb = discord.Embed(title='AWP', color=0x37393d) 
-    emb1 = discord.Embed(title='AWP', color=0x37393d) 
+    emb = discord.Embed(title='AWP', color=0x6600ff) 
+    emb1 = discord.Embed(title='AWP', color=0x6600ff) 
     if(len(config.get('custom_thumb')) > 0):
         emb.set_thumbnail(url=config.get('custom_thumb'))
     map_banner = config['map_banner'].get(server_info.curr_map, None)
@@ -473,7 +473,7 @@ async def changestatus( ctx, statustype:str = None, *, arg:str = None):
 async def say(ctx, *, text):
 	await ctx.channel.purge( limit = 1 )
 	t = (text)
-	emb = discord.Embed(description = f'{t}', colour = discord.Colour(0x37393d))
+	emb = discord.Embed(description = f'{t}', colour = discord.Colour(0x6600ff))
 	await ctx.send(embed = emb)
 
 
