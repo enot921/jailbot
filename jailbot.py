@@ -401,7 +401,6 @@ async def awp(ctx):
     a2.get()
     a3.get()
     a4.get()
-    a5.get()
     a6.get()
     a7.get()
     status = server_info.curr_map + ' | ' + server_info.players  
